@@ -12,7 +12,7 @@ export default function Skills() {
         <li>java</li>
         <li>canva</li>
         <li>figma</li>
-        <li>very comfortable utilizing AI tools from copilot to codex to cursor to clawbot</li>
+        <li>very comfortable utilizing AI tools from copilot to codex to cursor</li>
       </ul>
     </section>
   )

@@ -29,6 +29,7 @@ body {
   top: 0;
   z-index: 10;
   display: flex;
+  align-items: center;
   gap: 2rem;
   justify-content: center;
   padding: 1.25rem 1.5rem;
@@ -36,11 +37,42 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+.nav .nav-about {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
 .nav a {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-logo-button:focus {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
 }
 
 .nav a:hover {
