@@ -1,3 +1,5 @@
+import logo from '../photos/ck.png'
+
 export default function Nav() {
   return (
     <nav className="nav">
@@ -6,7 +8,7 @@ export default function Nav() {
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         aria-label="Scroll to top"
       >
-        <img src="/src/photos/ck.png" alt="Cady logo" className="nav-logo" />
+        <img src={logo} alt="Cady logo" className="nav-logo" />
       </button>
       <a href="#about" className="nav-about">about</a>
       <a href="#projects">projects</a>
