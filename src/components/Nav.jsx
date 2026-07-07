@@ -11,6 +11,7 @@ export default function Nav() {
         <img src={logo} alt="Cady logo" className="nav-logo" />
       </button>
       <a href="#about" className="nav-about">about</a>
+      <a href="#experience">experience</a>
       <a href="#projects">projects</a>
       <a href="#skills">skills</a>
       <a href="#connect">connect</a>
