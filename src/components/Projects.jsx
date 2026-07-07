@@ -6,7 +6,7 @@ export default function Projects() {
         <li className="project-card">
           <h3>tinyphotobooth</h3>
           <p>a fun, cute way to get a photobooth strip... for free!</p>
-          <p>this is also deployed on <a href="tinyphotobooths.com" className="link">tinyphotobooths.com</a></p>
+          <p>this is also deployed on <a href="https://tinyphotobooths.com" target="_blank" rel="noopener noreferrer" className="link">tinyphotobooths.com</a></p>
           <a href="https://github.com/cady-kocanda/tinyphotobooth" className="link">View project</a>
         </li>
         <li className="project-card">
