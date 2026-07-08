@@ -4,6 +4,12 @@ export default function Projects() {
       <h2 className="section-title">Projects</h2>
       <ul className="project-list">
         <li className="project-card">
+          <h3>racely</h3>
+          <p>find running races near you, filtered your way</p>
+          <p>this is also deployed on <a href="https://race-radar.vercel.app" target="_blank" rel="noopener noreferrer" className="link">race-radar.vercel.app</a></p>
+          <a href="https://github.com/cady-kocanda/race-radar" className="link">View project</a>
+        </li>
+        <li className="project-card">
           <h3>tinyphotobooth</h3>
           <p>a fun, cute way to get a photobooth strip... for free!</p>
           <p>this is also deployed on <a href="https://tinyphotobooths.com" target="_blank" rel="noopener noreferrer" className="link">tinyphotobooths.com</a></p>
