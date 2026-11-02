@@ -1,35 +1,47 @@
+const PROJECTS = [
+  {
+    name: 'racely',
+    description: 'find running races near you, filtered your way',
+    repo: 'https://github.com/cady-kocanda/race-radar',
+    site: 'https://race-radar.vercel.app',
+    siteLabel: 'race-radar.vercel.app',
+  },
+  {
+    name: 'tinyphotobooth',
+    description: 'a fun, cute way to get a photobooth strip... for free!',
+    repo: 'https://github.com/cady-kocanda/tinyphotobooth',
+    site: 'https://tinyphotobooths.com',
+    siteLabel: 'tinyphotobooths.com',
+  },
+  {
+    name: 'trivia game',
+    description: 'group trivia! utilizes the trivia DB API',
+    repo: 'https://github.com/cady-kocanda/triviagame',
+  },
+  {
+    name: 'momenta',
+    description: 'a website to track your goals, to dos, and more!',
+    repo: 'https://github.com/cady-kocanda/momenta',
+  },
+]
+
 export default function Projects() {
   return (
-    <section id="projects" className="section">
-      <h2 className="section-title">Projects</h2>
+    <section id="projects" className="section section-cream">
+      <h2 className="display section-title">Built <em>for</em> fun.</h2>
       <ul className="project-list">
-        <li className="project-card">
-          <h3>racely</h3>
-          <p>find running races near you, filtered your way</p>
-          <p>this is also deployed on <a href="https://race-radar.vercel.app" target="_blank" rel="noopener noreferrer" className="link">race-radar.vercel.app</a></p>
-          <a href="https://github.com/cady-kocanda/race-radar" className="link">View project</a>
-        </li>
-        <li className="project-card">
-          <h3>tinyphotobooth</h3>
-          <p>a fun, cute way to get a photobooth strip... for free!</p>
-          <p>this is also deployed on <a href="https://tinyphotobooths.com" target="_blank" rel="noopener noreferrer" className="link">tinyphotobooths.com</a></p>
-          <a href="https://github.com/cady-kocanda/tinyphotobooth" className="link">View project</a>
-        </li>
-        <li className="project-card">
-          <h3>trivia game</h3>
-          <p>group trivia! utilizes the trivia DB API</p>
-          <a href="https://github.com/cady-kocanda/triviagame" className="link">View project</a>
-        </li>
-        <li className="project-card">
-          <h3>momenta</h3>
-          <p>a website to to track your goals, to dos, and more!</p>
-          <a href="https://github.com/cady-kocanda/momenta" className="link">View project</a>
-        </li>
-        {/* <li className="project-card">
-          <h3>budget tracker</h3>
-          <p>set your budget, track your expenses, and monitor your progress</p>
-          <a href="https://github.com/cady-kocanda/budget-tracker" className="link">View project</a>
-        </li> */}
+        {PROJECTS.map((project) => (
+          <li className="project-card" key={project.name}>
+            <h3 className="display">{project.name}</h3>
+            <p>{project.description}</p>
+            <div className="project-links">
+              <a href={project.repo} target="_blank" rel="noopener noreferrer" className="pill pill-dark">view project</a>
+              {project.site && (
+                <a href={project.site} target="_blank" rel="noopener noreferrer" className="pill pill-outline">{project.siteLabel} ↗</a>
+              )}
+            </div>
+          </li>
+        ))}
       </ul>
     </section>
   )

@@ -13,12 +13,12 @@ const CERTIFICATIONS = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="section">
-      <h2 className="section-title">Certifications</h2>
+    <section id="certifications" className="section section-cream">
+      <h2 className="display section-title">Certified <em>&</em> learning.</h2>
       <ul className="certifications-list">
         {CERTIFICATIONS.map((cert) => (
           <li className="certification-card" key={cert.name}>
-            <h3>{cert.name}</h3>
+            <h3 className="display">{cert.name}</h3>
             <p className="certification-meta">
               {cert.issuer} · {cert.date}
             </p>

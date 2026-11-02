@@ -45,8 +45,8 @@ const EXPERIENCE = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="section">
-      <h2 className="section-title">Experience</h2>
+    <section id="experience" className="section section-maroon">
+      <h2 className="display section-title">Work <em>&</em> Experience</h2>
       <ul className="experience-list">
         {EXPERIENCE.map((job) => (
           <li className="experience-card" key={`${job.company}-${job.title}`}>
