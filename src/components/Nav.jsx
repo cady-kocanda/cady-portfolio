@@ -14,6 +14,7 @@ export default function Nav() {
       <a href="#experience">experience</a>
       <a href="#projects">projects</a>
       <a href="#skills">skills</a>
+      <a href="#certifications">certifications</a>
       <a href="#connect">connect</a>
     </nav>
   )
