@@ -1,10 +1,10 @@
 const EXPERIENCE = [
   {
-    title: 'AI Engineer',
+    title: 'Forward Deployed Engineer',
     company: 'Optum',
     dates: 'May 2026 - Present',
     bullets: [
-      'Architect enterprise AI platforms as a Forward Deployed Engineer, partnering with business leaders to deliver AI solutions for complex workflows.',
+      'Architect enterprise AI platforms, partnering with business leaders to deliver AI solutions for complex workflows.',
       'Design cloud-native infrastructure on GCP with Terraform and build developer tooling that accelerates AI deployment.',
       'Lead an internal FDE engagement platform covering use case intake, delivery, and executive reporting.',
       'Set AI governance and technical standards balancing innovation with security and operations.',
